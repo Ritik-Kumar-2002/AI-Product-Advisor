@@ -1,0 +1,44 @@
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langgraph
+langsmith
+
+# LLM Providers
+langchain-openai
+langchain-google-genai
+langchain-anthropic
+langchain-groq
+langchain-ollama
+langchain-huggingface
+
+# Embeddings and Vector Databases
+langchain-chroma
+chromadb
+faiss-cpu
+
+# Document Processing
+pypdf
+unstructured
+docx2txt
+beautifulsoup4
+lxml
+
+# Environment and API Utilities
+python-dotenv
+requests
+httpx
+pydantic
+
+# Data Processing
+numpy
+pandas
+
+# Jupyter Notebook
+jupyter
+ipykernel
+
+# Scikit learn 
+scikit-learn
