@@ -42,3 +42,6 @@ ipykernel
 
 # Scikit learn 
 scikit-learn
+
+# beautiful soup
+beautifulsoup4
