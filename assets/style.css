@@ -132,3 +132,117 @@ h2, h3 {
     font-size: 13px;
     font-weight: 700;
 }
+
+
+/* Chatbot Styling */
+
+
+/* ===== MAIN CHATBOT ===== */
+
+.chat-header {
+    background: linear-gradient(120deg, #5946e8 0%, #8174f5 55%, #aaa2ff 100%);
+    color: white;
+    padding: 22px 20px;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 105px;
+    box-shadow: 0 5px 18px rgba(93, 75, 220, 0.15);
+}
+
+.chat-header img {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.8);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.chat-header-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chat-header-div h3 {
+    color: white !important;
+    margin: 0 !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+}
+
+.chat-header-div p {
+    color: rgba(255,255,255,0.9) !important;
+    margin: 0 !important;
+    font-size: 14px;
+}
+
+/* ===== CHAT HISTORY ===== */
+
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    border-radius: 12px;
+}
+
+.stTextArea textarea {
+    resize: none !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word !important;
+    padding: 14px 17px !important;
+    border-radius: 13px !important;
+    border: 1px solid #dcd6ff !important;
+    background: rgba(255,255,255,0.85) !important;
+    font-size: 14px !important;
+    transition: all 0.25s ease !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #8878f5 !important;
+    box-shadow: 0 0 0 3px rgba(126, 108, 245, 0.12) !important;
+}
+
+/* ===== CHAT FORM ===== */
+
+div[data-testid="stForm"] {
+    border: 1px solid #dedaf0 !important;
+    border-radius: 15px !important;
+    padding: 12px !important;
+    background: rgba(250,249,255,0.8) !important;
+}
+
+/* ===== SEND BUTTON ===== */
+
+div[data-testid="stFormSubmitButton"] button {
+    background: linear-gradient(135deg, #6554ef, #8763d5) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 5px 14px rgba(102, 86, 225, 0.25) !important;
+}
+
+div[data-testid="stFormSubmitButton"] button:hover {
+    transform: translateY(-3px) scale(1.06) !important;
+    box-shadow: 0 8px 18px rgba(102, 86, 225, 0.35) !important;
+    background: linear-gradient(135deg, #7968ff, #966fe8) !important;
+}
+
+div[data-testid="stFormSubmitButton"] button:active {
+    transform: scale(0.94) !important;
+}
+
+/* ===== GENERAL POLISH ===== */
+
+.stTextArea label {
+    display: none !important;
+}

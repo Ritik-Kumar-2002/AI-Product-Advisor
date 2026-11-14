@@ -6,9 +6,11 @@ def render_productCard():
         image_col, info_col = st.columns([0.55, 0.45], gap='medium')
 
         with image_col:
-            demo_image = 'https://m.media-amazon.com/images/I/51kq3iS5Q6L._SY741_.jpg'
-            st.image(demo_image, use_container_width=True)
-
+            image_url  = st.session_state.get('image_url')
+            if image_url:
+                st.image(image_url, use_container_width=True)
+            else: 
+                st.write(image_url)
         with info_col:
             st.markdown(f'<span class="product-title">{st.session_state["product"].name}</span>', unsafe_allow_html=True)
 

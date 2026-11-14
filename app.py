@@ -7,6 +7,7 @@ from ui.Chatbot import render_chatBot
 from dotenv import load_dotenv
 from services.scrapper import fetch_page_text
 from services.extracter import fetch_product_detail
+from services.scrapper import fetch_productImage
 
 
 # Page Configuration
@@ -52,13 +53,19 @@ if submit_btn:
         page_content = fetch_page_text(product_url)
         try:
             product = fetch_product_detail(page_content)
-            
         except Exception as e:
             st.write(f'Could Not extract web page information: {e}')
             st.stop()
 
-    st.session_state["product"] = product
+        try:
+            image_url = fetch_productImage(product_url)
+        except Exception as e:
+            st.write(f'Image Error: {e}')
+            image_url = None
 
+
+    st.session_state["product"] = product
+    st.session_state["image_url"] = image_url
    
 if "product" in st.session_state:
     
